@@ -2,7 +2,7 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const factoryContract = require('./build/CampaignFactory.json');
 const provider = new HDWalletProvider(
-    'sort shield load seat supply mutual meadow credit scout fruit trouble siege',
+    process.env.PRIVATE_KEY,
   // remember to change this to your own phrase!
   'https://rinkeby.infura.io/v3/a61a0f83a6ca4577bb88724327bbf03c'
 );
